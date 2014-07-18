@@ -18,6 +18,8 @@
 		389CAF5919789E2B00A0C712 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CAF3819789E2A00A0C712 /* Foundation.framework */; };
 		389CAF5A19789E2B00A0C712 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CAF3C19789E2A00A0C712 /* UIKit.framework */; };
 		389CAF6219789E2B00A0C712 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 389CAF6019789E2B00A0C712 /* InfoPlist.strings */; };
+		389CAF6F19789FF400A0C712 /* PPFifoQueue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 389CAF6E19789FF400A0C712 /* PPFifoQueue.mm */; };
+		389CAF711978A01700A0C712 /* PPFifoQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 389CAF701978A01700A0C712 /* PPFifoQueueTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		389CAF5719789E2B00A0C712 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		389CAF5F19789E2B00A0C712 /* PPFoundationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PPFoundationTests-Info.plist"; sourceTree = "<group>"; };
 		389CAF6119789E2B00A0C712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		389CAF6D19789FF400A0C712 /* PPFifoQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPFifoQueue.h; sourceTree = "<group>"; };
+		389CAF6E19789FF400A0C712 /* PPFifoQueue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PPFifoQueue.mm; sourceTree = "<group>"; };
+		389CAF701978A01700A0C712 /* PPFifoQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPFifoQueueTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,8 @@
 			children = (
 				389CAF4719789E2A00A0C712 /* PPAppDelegate.h */,
 				389CAF4819789E2A00A0C712 /* PPAppDelegate.m */,
+				389CAF6D19789FF400A0C712 /* PPFifoQueue.h */,
+				389CAF6E19789FF400A0C712 /* PPFifoQueue.mm */,
 				389CAF5019789E2A00A0C712 /* Images.xcassets */,
 				389CAF3F19789E2A00A0C712 /* Supporting Files */,
 			);
@@ -127,6 +134,7 @@
 		389CAF5D19789E2B00A0C712 /* PPFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				389CAF701978A01700A0C712 /* PPFifoQueueTest.m */,
 				389CAF5E19789E2B00A0C712 /* Supporting Files */,
 			);
 			path = PPFoundationTests;
@@ -240,6 +248,7 @@
 			files = (
 				389CAF4919789E2A00A0C712 /* PPAppDelegate.m in Sources */,
 				389CAF4519789E2A00A0C712 /* main.m in Sources */,
+				389CAF6F19789FF400A0C712 /* PPFifoQueue.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389CAF711978A01700A0C712 /* PPFifoQueueTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
