@@ -13,14 +13,11 @@
 		389CAF4319789E2A00A0C712 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 389CAF4119789E2A00A0C712 /* InfoPlist.strings */; };
 		389CAF4519789E2A00A0C712 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 389CAF4419789E2A00A0C712 /* main.m */; };
 		389CAF4919789E2A00A0C712 /* PPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 389CAF4819789E2A00A0C712 /* PPAppDelegate.m */; };
-		389CAF4C19789E2A00A0C712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389CAF4A19789E2A00A0C712 /* Main.storyboard */; };
-		389CAF4F19789E2A00A0C712 /* PPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389CAF4E19789E2A00A0C712 /* PPViewController.m */; };
 		389CAF5119789E2A00A0C712 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389CAF5019789E2A00A0C712 /* Images.xcassets */; };
 		389CAF5819789E2B00A0C712 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CAF5719789E2B00A0C712 /* XCTest.framework */; };
 		389CAF5919789E2B00A0C712 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CAF3819789E2A00A0C712 /* Foundation.framework */; };
 		389CAF5A19789E2B00A0C712 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CAF3C19789E2A00A0C712 /* UIKit.framework */; };
 		389CAF6219789E2B00A0C712 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 389CAF6019789E2B00A0C712 /* InfoPlist.strings */; };
-		389CAF6419789E2B00A0C712 /* PPFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 389CAF6319789E2B00A0C712 /* PPFoundationTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +41,11 @@
 		389CAF4619789E2A00A0C712 /* PPFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPFoundation-Prefix.pch"; sourceTree = "<group>"; };
 		389CAF4719789E2A00A0C712 /* PPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAppDelegate.h; sourceTree = "<group>"; };
 		389CAF4819789E2A00A0C712 /* PPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPAppDelegate.m; sourceTree = "<group>"; };
-		389CAF4B19789E2A00A0C712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		389CAF4D19789E2A00A0C712 /* PPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPViewController.h; sourceTree = "<group>"; };
-		389CAF4E19789E2A00A0C712 /* PPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPViewController.m; sourceTree = "<group>"; };
 		389CAF5019789E2A00A0C712 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		389CAF5619789E2B00A0C712 /* PPFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		389CAF5719789E2B00A0C712 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		389CAF5F19789E2B00A0C712 /* PPFoundationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PPFoundationTests-Info.plist"; sourceTree = "<group>"; };
 		389CAF6119789E2B00A0C712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		389CAF6319789E2B00A0C712 /* PPFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPFoundationTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +107,6 @@
 			children = (
 				389CAF4719789E2A00A0C712 /* PPAppDelegate.h */,
 				389CAF4819789E2A00A0C712 /* PPAppDelegate.m */,
-				389CAF4A19789E2A00A0C712 /* Main.storyboard */,
-				389CAF4D19789E2A00A0C712 /* PPViewController.h */,
-				389CAF4E19789E2A00A0C712 /* PPViewController.m */,
 				389CAF5019789E2A00A0C712 /* Images.xcassets */,
 				389CAF3F19789E2A00A0C712 /* Supporting Files */,
 			);
@@ -137,7 +127,6 @@
 		389CAF5D19789E2B00A0C712 /* PPFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
-				389CAF6319789E2B00A0C712 /* PPFoundationTests.m */,
 				389CAF5E19789E2B00A0C712 /* Supporting Files */,
 			);
 			path = PPFoundationTests;
@@ -231,7 +220,6 @@
 			files = (
 				389CAF5119789E2A00A0C712 /* Images.xcassets in Resources */,
 				389CAF4319789E2A00A0C712 /* InfoPlist.strings in Resources */,
-				389CAF4C19789E2A00A0C712 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +239,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				389CAF4919789E2A00A0C712 /* PPAppDelegate.m in Sources */,
-				389CAF4F19789E2A00A0C712 /* PPViewController.m in Sources */,
 				389CAF4519789E2A00A0C712 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389CAF6419789E2B00A0C712 /* PPFoundationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +267,6 @@
 				389CAF4219789E2A00A0C712 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		389CAF4A19789E2A00A0C712 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				389CAF4B19789E2A00A0C712 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		389CAF6019789E2B00A0C712 /* InfoPlist.strings */ = {
