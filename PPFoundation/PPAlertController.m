@@ -1,6 +1,5 @@
 //
 //  PPAlertController.m
-//  SwipeSound
 //
 //  Created by Philip Zhao on 12/24/14.
 //  Copyright (c) 2014 PP. All rights reserved.
