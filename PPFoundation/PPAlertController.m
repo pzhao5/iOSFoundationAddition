@@ -7,8 +7,6 @@
 //
 
 #import "PPAlertController.h"
-#import "PPAssert.h"
-#import "PPMacros.h"
 
 @interface PPAlertAction ()
 @property (nonatomic, copy, readwrite) NSString *title;
@@ -83,7 +81,7 @@
 
 - (void)intendToShowAlert
 {
-  PPAssertFalse(self.hasUsedOnce, @"Must not used");
+  NSAssert(self.hasUsedOnce, @"Must not used");
   self.hasUsedOnce = YES;
 }
 
@@ -95,7 +93,7 @@
 {
   self = [super init];
   if (self) {
-    if (PP_PRE_IOS8) {
+    if (![UIAlertController class]) {
       _alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
       _actions = [actions copy];
       [_actions enumerateObjectsUsingBlock:^(PPAlertAction *alertAction, NSUInteger index, BOOL *stop) {
@@ -127,7 +125,7 @@
 - (void)showOnceFromViewController:(UIViewController *)presenter
 {
   [self intendToShowAlert];
-  if (PP_PRE_IOS8) {
+  if (![UIAlertController class]) {
     [_alertView show];
   } else {
     [presenter presentViewController:_alertController animated:YES completion:nil];
@@ -164,7 +162,7 @@
 {
   self = [super init];
   if (self) {
-    if (PP_PRE_IOS8) {
+    if (![UIAlertController class]) {
       _actionSheet = [[UIActionSheet alloc] initWithTitle:title delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
       _actions = actions;
       [_actions enumerateObjectsUsingBlock:^(PPAlertAction *alertAction, NSUInteger index, BOOL *stop) {
@@ -196,7 +194,7 @@
 - (void)showOnceFromViewController:(UIViewController *)presenter
 {
   [self intendToShowAlert];
-  if (PP_PRE_IOS8) {
+  if (![UIAlertController class]) {
     [_actionSheet showInView:presenter.view];
   } else {
     [presenter presentViewController:_alertController animated:YES completion:nil];
